@@ -1,0 +1,26 @@
+--AUTH POST
+
+curl --location --request POST --url 'http://localhost:3000/api/v1/auth/register' --header 'Content-Type:application/json' --data-raw '{}'
+
+--AUTH_POST_LOGIN
+curl --location --request POST --url 'http://localhost:3000/api/v1/auth/login' --header 'Content-Type:application/json' --data-raw '{}'
+
+--HASHING
+hashing is mathematical algorirthm that maps data of any size to a bit string of fixed size and is irreversible
+
+--REGISTER
+curl --location --request POST --url 'http://localhost:3000/api/v1/auth/register' --header 'Content-Type:application/json' --data-raw '{"name":"chukssomzzy","password":"somm1978","email":"chukssomzzy23@gmail.com"}'
+--Test Jobs Middleware
+curl --location --request GET --url 'http://localhost:3000/api/v1/jobs' --header 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg4ZjcwYzZiNDZjMDc3ZjA5NzAyMDMiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMxNTgzMjYsImV4cCI6MTY1NTc1MDMyNn0.M-UjhM_RZbvLkThMqPZ6k4PQ_nNk4vCCarTE15uTp0w'
+--Creating Jobs
+curl --location --request POST --url 'http://localhost:3000/api/v1/jobs' --header 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg4ZjcwYzZiNDZjMDc3ZjA5NzAyMDMiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMxNTgzMjYsImV4cCI6MTY1NTc1MDMyNn0.M-UjhM_RZbvLkThMqPZ6k4PQ_nNk4vCCarTE15uTp0w' --header 'Content-Type:application/json' --data-raw '{"company":"google","position":"intern"}'
+--ID 628b9afc8f6dcd2c40e42e1e
+--Testing Single Route
+curl --location --request GET --url 'http://localhost:3000/api/v1/jobs/628b9afc8f6dcd2c40e42e1e' --header 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg4ZjcwYzZiNDZjMDc3ZjA5NzAyMDMiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMxNTgzMjYsImV4cCI6MTY1NTc1MDMyNn0.M-UjhM_RZbvLkThMqPZ6k4PQ_nNk4vCCarTE15uTp0w'
+--Testing Patch Route
+curl --location --request PATCH --url 'http://localhost:3000/api/v1/jobs/628b9afc8f6dcd2c40e42e1e' --header 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg4ZjcwYzZiNDZjMDc3ZjA5NzAyMDMiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMxNTgzMjYsImV4cCI6MTY1NTc1MDMyNn0.M-UjhM_RZbvLkThMqPZ6k4PQ_nNk4vCCarTE15uTp0w' --header 'Content-Type:application/json' --data-raw '{"company":"Amazon","position":"System Analyst"}'
+--Delete Jobs
+curl --location --request DELETE --url 'http://localhost:3000/api/v1/jobs/628b9afc8f6dcd2c40e42e1e' --header 'Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg4ZjcwYzZiNDZjMDc3ZjA5NzAyMDMiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMxNTgzMjYsImV4cCI6MTY1NTc1MDMyNn0.M-UjhM_RZbvLkThMqPZ6k4PQ_nNk4vCCarTE15uTp0w'
+
+--Auth User--
+{"success":true,"name":"chukssomzzy","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjhiYzRlYjY0ZWY0ZDdiNWU0MGMzNjIiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMzMjcwODQsImV4cCI6MTY1NTkxOTA4NH0.9NgpImSCF4jYpVeCHJ6pb6C3vYBYcgZjOUrNP5S9erU"}
