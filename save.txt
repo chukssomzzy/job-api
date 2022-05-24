@@ -24,3 +24,4 @@ curl --location --request DELETE --url 'http://localhost:3000/api/v1/jobs/628b9a
 
 --Auth User--
 {"success":true,"name":"chukssomzzy","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjhiYzRlYjY0ZWY0ZDdiNWU0MGMzNjIiLCJuYW1lIjoiY2h1a3Nzb216enkiLCJpYXQiOjE2NTMzMjcwODQsImV4cCI6MTY1NTkxOTA4NH0.9NgpImSCF4jYpVeCHJ6pb6C3vYBYcgZjOUrNP5S9erU"}
+https://fierce-badlands-42387.herokuapp.com/ | https://git.heroku.com/fierce-badlands-42387.git
